@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title></title>
+   </head>
+   <body>
+      <p></p>
+      <link href="https://asshurthosting.pw/discord/test/assets/style.css" rel="stylesheet">
+      <link href="https://asshurthosting.pw/style.css" rel="stylesheet">
+      <link href="https://asshurthosting.pw/discord/test/assets/slick.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+      <p></p>
+      <p style="text-align: center;"><img alt="" class="fr-fic fr-dib" height="234" src="https://i.imgur.com/7fHlyul.png" width="234"></p>
+      <h1 style="text-align: center;"><strong>SirHurt V4 Documentation</strong></h1>
+      <p>&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #0000ff;"><strong>table&nbsp;</strong></span>getrawmetatable(<span style="color: #2fcabb;"><strong>Varient&nbsp;</strong></span><span style="color: #339966;"><span style="color: #333333;">instance</span></span>)</p>
+      <p style="text-align: center;">Return&#39;s the raw metatable of <strong>instance</strong></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #3366ff;"><strong>bool&nbsp;</strong></span>setreadonly(<span style="color: #0000ff;"><strong>table&nbsp;</strong></span>instance, <span style="color: #3366ff;"><strong>bool</strong>&nbsp;</span>protected)</p>
+      <p style="text-align: center;">Set&#39;s instances read only lock to <strong>protected</strong></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #3366ff;">bool</span>&nbsp;</strong>isreadonly(<span style="color: #008000;"><strong>userdata&nbsp;</strong></span>instance)</p>
+      <p style="text-align: center;">Returns if Instance is writeable or readonly.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #008080;"><strong>string&nbsp;</strong></span>LUAPROTECT(<span style="color: #008080;"><strong>string&nbsp;</strong></span>script)</p>
+      <p style="text-align: center;">Returns encrypted code of <strong>script</strong> which can be decrypted and ran using XPROTECT.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: rgb(51, 51, 153);"><strong>none&nbsp;</strong></span>XPROTECT(<span style="color: #008080;"><strong>string&nbsp;</strong></span>script)</p>
+      <p style="text-align: center;">Decrypts <strong>script</strong> encrypted by the LUAPROTECT function and run&#39;s the code. This function has no return.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #008080;"><strong>string&nbsp;</strong></span>readfile(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>filepath)</p>
+      <p style="text-align: center;">reads file <strong>&nbsp;filepath</strong> and returns it&#39;s body. This will trigger a security popup on ran.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #3366ff;"><strong>bool&nbsp;</strong></span>writefile(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>filepath, <span style="color: #008080;"><strong>string</strong>&nbsp;</span>content)</p>
+      <p style="text-align: center;">writes to file <strong>&nbsp;filepath</strong> and set&#39;s it&#39;s body to <strong>&nbsp;content</strong>. This will trigger a security popup on ran.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #008080;">string</span>&nbsp;</strong>setclipboard(<span style="color: #008000;"><strong>userdata&nbsp;</strong></span>Property)</p>
+      <p style="text-align: center;">set&#39;s your keyboards clipboard to value of <strong>Property</strong>.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #008080;">string</span>&nbsp;</strong>luaformat(<span style="color: #008080;"><strong>string&nbsp;</strong></span>script)</p>
+      <p style="text-align: center;">Formats <strong>script</strong>.and returns the formatted code.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #333399;"><strong>int</strong>&nbsp;</span>RandomString(<span style="color: #333399;"><strong>int</strong>&nbsp;</span>length)</p>
+      <p style="text-align: center;">returns a random string with the length of <strong>length</strong></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #008080;"><strong>string&nbsp;</strong></span>ReplaceString(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>orginal, <span style="color: #008080;"><strong>string</strong>&nbsp;</span>replace, <span style="color: #008080;"><strong>string</strong>&nbsp;</span>replacewith)</p>
+      <p style="text-align: center;">replaces all occurances of &nbsp;<strong>replace</strong> in <strong>orginal</strong> with &nbsp;<strong>replacewith</strong> and returns it.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #008080;"><strong>string</strong>&nbsp;</span>HttpGet(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>url)</p>
+      <p style="text-align: center;">Returns page body of <strong>url</strong></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #008080;"><strong>string</strong>&nbsp;</span>HttpPost(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>url, <span style="color: #008080;"><strong>string</strong>&nbsp;</span>data, <span style="color: #3366ff;"><strong>bool</strong>&nbsp;</span>async, <span style="color: #008080;"><strong>string</strong>&nbsp;</span>ContentType)</p>
+      <p style="text-align: center;">Sends a POST request to URL <strong>url</strong> with the post data of <strong>data</strong> with the content type of the data as <strong>ContentType</strong> and returns the body of the page.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #99ccff;"><strong>function</strong>&nbsp;</span>loadstring(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>script,<span style="color: #008080;">&nbsp;</span>[<span style="color: #008080;"><strong>string</strong>&nbsp;</span>chunk])</p>
+      <p style="text-align: center;">Compiles the script into a function which can be called. Chunk is optional.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #333399;"><strong>none</strong>&nbsp;</span>queue_on_teleport(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>script)</p>
+      <p style="text-align: center;">Pushes script into a queue which will be executed on teleportation.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #008000;"><strong>userdata&nbsp;</strong></span>GetObjects(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>assetid)</p>
+      <p style="text-align: center;">load&#39;s a roblox model <strong>assetid</strong> into the game and returns it</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #008080;"><strong>string</strong>&nbsp;</span>gethwid()</p>
+      <p style="text-align: center;">returns your HWID for asshurt</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #99cc00;">table</span>&nbsp;</strong>getnilinstances()</p>
+      <p style="text-align: center;">Returns a table with instances parented to nil</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #ffff00;"><span style="color: #008080;"><strong><span style="color: #99cc00;">table</span>&nbsp;</strong>&nbsp;</span>&nbsp;</span>getgenv()</p>
+      <p style="text-align: center;">Returns a table populated with the SirHurt thread environment</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #99cc00;">table</span>&nbsp;</strong>getrenv()</p>
+      <p style="text-align: center;">Returns a table populated with the ROBLOX thread environment</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #99cc00;"><strong>table&nbsp;</strong></span>getreg()</p>
+      <p style="text-align: center;">Returns a table populated with everything in the registry table</p>
+      <p style="text-align: center;"><br></p>
+      <p style="text-align: center;"><strong><span style="color: #99cc00;">table</span>&nbsp;</strong> getgc()</p>
+      <p style="text-align: center;">Returns a table populated with everything in the garbage collector</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #3366ff;"><strong>bool&nbsp;</strong></span>checkcaller()</p>
+      <p style="text-align: center;">Returns whether the function caller originated from a SirHurt script</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <!--
+         <p style="text-align: center;"><span style="color: #008080;"><strong>string</strong>&nbsp;</span>sha256(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>enc)</p>
+         <p style="text-align: center;">Returns hash of enc using sha256.&nbsp;</p>
+         <p style="text-align: center;"><br></p>
+         -->
+      <p style="text-align: center;"><span style="color: #99cc00;"><strong>table&nbsp;</strong></span>getloadedmodules()</p>
+      <p style="text-align: center;">Returns a table with all modules currently loaded inside the game.<span style="font-size: inherit; background-color: transparent;">&nbsp;</span></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #99cc00;"><strong>table&nbsp;</strong></span>getconnections(<strong><span style="color: #b30036;">RBXScriptSignal</span>&nbsp;</strong>signal)</p>
+      <p style="text-align: center;">Returns an table with all the connections of the signal <strong>signal</strong>.<span style="font-size: inherit; background-color: transparent;">&nbsp;</span></p>
+      <p style="text-align: center;">&nbsp;</p>
+	<p style="text-align: center;"><span style="color: #333399;"><strong>none&nbsp;</strong></span>firesignal(<strong><span style="color: #b30036;">RBXScriptSignal</span>&nbsp;</strong>signal, ...)</p>
+      <p style="text-align: center;">Fires all signals connected to <strong>signal</strong> with the arguments ...<span style="font-size: inherit; background-color: transparent;">&nbsp;</span></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #99ccff;"><strong>function&nbsp;</strong></span>hookfunction(<strong><span style="color: #99ccff;">function</span>&nbsp;</strong>old, <strong><span style="color: #99ccff;">function</span>&nbsp;</strong> new)</p>
+      <p style="text-align: center;">Hooks function <strong>old</strong> with function <strong>new</strong> and returns a backup of function <strong>old</strong>.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #99ccff;"><strong>function&nbsp;</strong></span>newcclosure(<strong><span style="color: #99ccff;">function</span>&nbsp;</strong>func)</p>
+      <p style="text-align: center;">Wraps function <strong>func</strong> in a C closure and returns the closure<span style="font-size: inherit; background-color: transparent;">&nbsp;</span></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #333399;"><strong>none&nbsp;</strong></span>dofile(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>path)</p>
+      <p style="text-align: center;">Read&#39;s file (<strong>path</strong>) and execute&#39;s the code contained in <strong>path</strong>.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #333399;"><strong>none&nbsp;</strong></span>leftpress()</p>
+      <p style="text-align: center;">Simulates a left mouse button click.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #333399;">none</span>&nbsp;</strong>rightpress()</p>
+      <p style="text-align: center;">Simulates a right mouse button click.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #333399;">none</span>&nbsp;</strong>leftrelease()</p>
+      <p style="text-align: center;">Simulates a left mouse button release.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #333399;">none</span>&nbsp;</strong>rightrelease()</p>
+      <p style="text-align: center;">Simulates a right mouse button release.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #333399;">none</span>&nbsp;</strong>keypress(<span style="color: #000080;"><strong>int</strong>&nbsp;</span>k)</p>
+      <p style="text-align: center;">Simulates a key press to <strong>k</strong>, which is the <a href="https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes">number mapping of a key</a></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #333399;">none</span>&nbsp;</strong>keyrelease(<span style="color: #000080;"><strong>int</strong>&nbsp;</span>k)</p>
+      <p style="text-align: center;">Simulates a key relese to <strong>k</strong>, which is the <a href="https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes">number mapping of a key</a></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #333399;">none</span>&nbsp;</strong>mousemoverel(<span style="color: #000080;"><strong>int</strong>&nbsp;</span>x, <span style="color: #000080;"><strong>int</strong>&nbsp;</span>y)</p>
+      <p style="text-align: center;">Moves the mouse cursor by <strong>x</strong> and <strong>y</strong> relative to the current cursor position.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #333399;">none</span>&nbsp;</strong>mousescroll(<span style="color: #000080;"><strong>int</strong>&nbsp;</span>n)</p>
+      <p style="text-align: center;">Scrolls the mouse by <strong>n</strong> amount</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #3366ff;"><strong>bool&nbsp;</strong></span>isrbxactive()</p>
+      <p style="text-align: center;">Returns a bool based on if the foreground window is Roblox.</p>
+      <p style="text-align: center;"><br></p>
+      <p style="text-align: center;"><span style="color: #3366ff;"><strong>bool&nbsp;</strong></span>islclosure(<span style="color: #99ccff;"><strong>function</strong></span> a)</p>
+      <p style="text-align: center;">Returns &#39;true&#39; if <strong>a</strong> is a LClosure</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #2fcabb;">None</span>&nbsp;</strong>fireclickdetector(<span style="color: #2fcabb;"><strong>Variant</strong>&nbsp;</span>ClickDetector, <span style="color: #333399;"><strong>int&nbsp;</strong></span>Distance)</p>
+      <p style="text-align: center;">Fires ClickDetector <strong>ClickDetector</strong> with distance <strong>Distance</strong></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #2fcabb;">None</span>&nbsp;</strong>firetouchinterest(<span style="color: #2fcabb;"><strong>Varient</strong>&nbsp;</span>Part, <span style="color: #2fcabb;"><strong>Varient</strong>&nbsp;</span>PartToTouch, <span style="color: #333399;"><strong>int&nbsp;</strong></span>touchtype)</p>
+      <p style="text-align: center;">Fires the TouchInterest of  <strong>PartToTouch</strong> with the part touching as <strong>Part</strong></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #3366ff;">bool</span>&nbsp;</strong>is_sirhurt_closure(<span style="color: #99ccff;"><strong>function</strong>&nbsp;</span>func)</p>
+      <p style="text-align: center;">Returns true if <strong>func</strong> is a function made by SirHurt.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #3366ff;">bool</span>&nbsp;</strong>is_protected_closure(<span style="color: #99ccff;"><strong>function</strong>&nbsp;</span>func)</p>
+      <p style="text-align: center;">Returns true if <strong>func</strong> is a protected closure.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #008080;"><strong>string&nbsp;</strong></span>decompile(<span style="color: #2fcabb;"><strong>Varient</strong></span><span style="color: #339966;"><span style="color: #000000;">&lt;<strong>LocalScript</strong>, <strong>ModuleScript</strong>&gt; Script</span>)</span>
+      </p>
+      <p style="text-align: center;">Decompiles &amp; returns the source code of given <strong>Script</strong></p>
+      <p style="text-align: center;"><br></p>
+      <p style="text-align: center;"><span style="color: #333399;"><strong>none&nbsp;</strong></span>terminatescript(<span style="color: #2fcabb;"><strong>Varient</strong></span><span style="color: #339966;"><span style="color: #000000;">&lt;<strong>LocalScript</strong>&gt; Script</span>)</span>
+      </p>
+      <p style="text-align: center;">Terminates <strong>Script</strong></p>
+      <p style="text-align: center;"><br></p>
+
+      <p style="text-align: center;"><span style="color: #333399;"><strong>none&nbsp;</strong></span>runscript(<span style="color: #2fcabb;"><strong>Varient</strong></span><span style="color: #339966;"><span style="color: #000000;">&lt;<strong>LocalScript</strong>&gt; Script</span>)</span>
+      </p>
+      <p style="text-align: center;">Runs <strong>Script</strong></p>
+      <p style="text-align: center;"><br></p>
+      <p style="text-align: center;"><strong><span style="color: #008000;">userdata</span>&nbsp;</strong>get_hidden_gui()</p>
+      <p style="text-align: center;">Returns a private PlayerGui hidden from game scripts.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #3366ff;">bool</span>&nbsp;</strong>compare_c_functions(<span style="color: #99ccff;"><strong>function</strong>&nbsp;</span>func, <span style="color: #99ccff;"><strong>function</strong>&nbsp;</span>func2)</p>
+      <p style="text-align: center;">Returns true if <strong>func</strong> and <strong>func2</strong> are internally the same function. Ex: Comparing two newcclosured functions.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #99cc00;"><strong>table</strong></span>(<span style="color: #3366ff;"><strong>bool</strong>&nbsp;</span>Success, <span style="color: #333399;"><strong>int</strong>&nbsp;</span>StatusCode, <strong><span style="color: #008080;">string</span>&nbsp;</strong>Body) http_request(<span style="color: #99cc00;"><strong>table</strong></span>(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>Url, <span style="color: #008080;"><strong>string</strong>&nbsp;</span>Method, <strong><span style="color: #99cc00;">table</span>&nbsp;</strong>Headers, <strong><span style="color: #008080;">string</span>&nbsp;</strong>Body)&nbsp;func)</p>
+      <p style="text-align: center;">Similar in functionality to <a href="https://developer.roblox.com/en-us/api-reference/function/HttpService/RequestAsync">HttpService:RequestAsync</a>. Url parameter is the only required paramter. Documentation for HttpService:RequestAsync can be viewed <a href="https://developer.roblox.com/en-us/api-reference/function/HttpService/RequestAsync">here</a></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #2fcabb;">Variant</span>&nbsp;</strong>Drawing.new(<span style="color: #008080;"><strong>string</strong>&nbsp;</span>ClassName)</p>
+      <p style="text-align: center;">Creates a new DrawObject based on the given class name and returns it.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="font-size: 24px;">LIBRARY (DEBUG)</span></strong></p>
+      <p style="text-align: center;"><br></p>
+      <p style="text-align: center;"><strong><span style="color: #2fcabb;">Variant</span>&nbsp;</strong>getupvalue/debug.getupvalue(<strong><span style="color: #2fcabb;">Variant</span></strong>&lt;<strong><span style="color: #2fcabb;">function, int</span></strong>&gt; a, <span style="color: #333399;"><strong>int&nbsp;</strong></span>b)</p>
+      <p style="text-align: center;">Returns the value of the requested upvalue from the stack specified</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><span style="color: #008080;"><strong>string&nbsp;</strong></span>setupvalue/debug.setupvalue(<strong><span style="color: #2fcabb;">Variant</span></strong>&lt;<strong><span style="color: #2fcabb;">function, int</span></strong>&gt; a, <span style="color: #333399;"><strong>int&nbsp;</strong></span>b, <strong><span style="color: #2fcabb;">Variant</span>&nbsp;</strong>c)</p>
+      <p style="text-align: center;">Sets the value of the requested upvalue from the stack specified and return&#39;s the upvalues name.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #2fcabb;">Table</span></strong>&lt;<strong><span style="color: #2fcabb;">Variant</span></strong>&gt;&nbsp;getupvalues/debug.getupvalues(<strong><span style="color: #2fcabb;">Variant</span></strong>&lt;<strong><span style="color: #2fcabb;">function, int</span></strong>&gt; a)</p>
+      <p style="text-align: center;">Returns all upvalues from the stack specified.</p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #2fcabb;">Variant&nbsp;</span></strong>getconstant/debug.getconstant(<strong><span style="color: #2fcabb;">Variant</span></strong>&lt;<strong><span style="color: #2fcabb;">function, int</span></strong>&gt; f, <span style="color: #333399;"><strong>int&nbsp;</strong></span>index)</p>
+      <p style="text-align: center;">Returns constant in function <strong>f&nbsp;</strong>at index <strong>index</strong></p>
+      <p style="text-align: center;"><br></p>
+      <p style="text-align: center;"><strong><span style="color: #2fcabb;">Table</span></strong>&lt;<strong><span style="color: #2fcabb;">Variant</span></strong>&gt; getconstants/debug.getconstants(<strong><span style="color: #2fcabb;">Variant</span></strong>&lt;<strong><span style="color: #2fcabb;">function, int</span></strong>&gt; f)</p>
+      <p style="text-align: center;">Stores all constants in function <strong>f</strong> in a table and returns it.</p>
+      <p style="text-align: center;"><br></p>
+      <p style="text-align: center;"><strong><span style="color: #333399;">none</span>&nbsp;</strong> setconstant/debug.setconstant(<strong><span style="color: #2fcabb;">Variant</span></strong>&lt;<strong><span style="color: #2fcabb;">function, int</span></strong>&gt; f, <span style="color: #333399;"><strong>int&nbsp;</strong></span>index, <strong><span style="color: #2fcabb;">Variant&nbsp;</span></strong>value)</p>
+      <p style="text-align: center;">Sets constant in function <strong>f&nbsp;</strong>at index <strong>index&nbsp;</strong>to <strong>value</strong></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #2fcabb;">Table</span></strong>&lt;<strong><span style="color: #2fcabb;">Variant</span></strong>&gt; debug.setmetatable(<strong><span style="color: #2fcabb;">Variant</span></strong><span style="color: #333399;"><strong>&nbsp;</strong></span>a, <strong><span style="color: #2fcabb;">Table</span></strong>&lt;<strong><span style="color: #2fcabb;">Variant</span></strong>&gt; b)</p>
+      <p style="text-align: center;">Set&#39;s the metatable of <strong>a</strong> to <strong>b</strong></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #2fcabb;">Table</span></strong>&lt;<strong><span style="color: #2fcabb;">Variant</span></strong>&gt; debug.getinfo(<strong><span style="color: #2fcabb;">Variant</span></strong>&lt;<strong><span style="color: #2fcabb;">function, int</span></strong>&gt; a, <span style="color: #008080;"><strong>string</strong>&nbsp;</span>b)</p>
+      <p style="text-align: center;">Returns a table of info from to the Lua function <strong>a</strong></p>
+      <p style="text-align: center;">&nbsp;</p>
+      <p style="text-align: center;"><strong><span style="color: #2fcabb;">Table</span></strong>&lt;<strong><span style="color: #2fcabb;">Variant</span></strong>&gt; debug.getregistry()</p>
+      <p style="text-align: center;">Return&#39;s the lua registry.</p>
+   </body>
+</html>
