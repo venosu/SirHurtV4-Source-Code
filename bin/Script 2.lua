@@ -1,0 +1,1 @@
+print(decompile(game.Players.LocalPlayer.PlayerGui.test))

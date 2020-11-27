@@ -1,0 +1,38 @@
+{
+	"print": {
+		"label": "print",
+		"type": "Function",
+		"description": "Outputs arguments to dev console.\narguments:\n[*] all lua types",
+		"insert": "print()"
+	},
+	"warn": {
+		"label": "warn",
+		"type": "Function",
+		"description": "Outputs arguments to dev console warning tab.\narguments:\n[*] all lua types",
+		"insert": "warn()"
+	},
+	"error": {
+		"label": "error",
+		"type": "Function",
+		"description": "Outputs arguments to dev console error tab.\narguments:\n[*] all lua types",
+		"insert": "error()"
+	},
+	"getrawmetatable": {
+		"label": "getrawmetatable",
+		"type": "Function",
+		"description": "Return's the raw metatable of arguments.\narguments:\n[*] userdata\n[*] table",
+		"insert": "getrawmetatable()"
+	},
+	"remotespy": {
+		"label": "remotespy",
+		"type": "Function",
+		"description": "local mt = getrawmetatable(game);\nlocal nc = mt.__namecall;\nsetreadonly(mt, false)\nmt.__namecall = newcclosure(function(...)\nlocal args = {...};\nif args[#args]:lower()=='fireserver' or args[#args]:lower()=='invokeserver' then\nfor i,v in pairs(args) do\nprint(tostring(v))\nend\nend\nreturn nc(...);\nend",
+		"insert": "local mt = getrawmetatable(game);\nlocal nc = mt.__namecall;\nsetreadonly(mt, false)\nmt.__namecall = newcclosure(function(...)\nlocal args = {...};\nif args[#args]:lower()=='fireserver' or args[#args]:lower()=='invokeserver' then\nfor i,v in pairs(args) do\nprint(tostring(v))\nend\nend\nreturn nc(...);\nend"
+	},
+	"fireclickdetector": {
+		"label": "fireclickdetector",
+		"type": "Function",
+		"description": "Fires a click detector.",
+		"insert": "fireclickdetector()"
+	},
+}

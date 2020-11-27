@@ -1,0 +1,27 @@
+[main]
+mainTextColor=158, 158, 158
+language=English
+[extra]
+topMost=true
+multiApplication=false
+autoInject=false
+saveTabsonExit=false
+extraScriptHub=false
+fpsUnlocker=false
+[scintilla]
+textEditorColor=30,30,30
+textColor=255,255,255
+identifier=255,255,255
+blockComment=74,139,69
+commentLine=74,139,69
+commentDoc=58,64,34
+integer=181,206,168
+string=193,118,76
+character=193,118,76
+literalString=193,118,76
+operator=255,255,255
+keyword1 Color("warn print decompile")=66,156,195
+keyword2 Color("if then else")=69,180,152
+keyword3 Color("getgenv setclipboard getupvalue")=103,216,218
+Custom Keywords=seperate_them_with_a_space
+Custom Keyword Color=103,216,218

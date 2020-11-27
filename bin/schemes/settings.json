@@ -1,0 +1,14 @@
+{
+	"main": {
+		"headerBackColor": "#3b3b3b",
+		"bottomBarBackColor": "#007acc",
+		"mainTextColor": "#9e9e9e"
+	},
+	"debug": {
+		"load-intellisense": true,
+		"linter": true,
+		"border-shadow": true,
+		"remove-tracebans": true,
+		"unban-merle": false
+	}
+}
